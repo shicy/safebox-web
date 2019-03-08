@@ -1,0 +1,21 @@
+{
+  "name": "safebox-web",
+  "version": "0.0.1",
+  "description": "the secure",
+  "main": "main.js",
+  "scripts": {
+    "start": "node-dev main",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "secure"
+  ],
+  "author": "shicy85@163.com",
+  "license": "ISC",
+  "dependencies": {
+    "v-render": "^2.0.25"
+  },
+  "devDependencies": {
+    "node-dev": "^3.1.3"
+  }
+}
