@@ -3,9 +3,17 @@
 var VRender = require(__vrender);
 
 
+var $ = VRender.$;
+
 var MainFrame = VRender.PageView.extend(module, {
+	pageTitle: "秘密",
+	pageLogo: "/images/logo.png",
+
 	renderBody: function (body) {
 		MainFrame.__super__.renderBody.call(this, body);
-		body.append("MainFrame");
+		var mainBody = $("#main-body").appendTo(body);
+		mainBody.append($("#singlepage-container.main-container"));
 	}
 });
+
+MainFrame.use(VRender.plugins.SinglePage);
