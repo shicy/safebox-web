@@ -6,7 +6,7 @@ var VRender = require(__vrender);
 var $ = VRender.$;
 
 var MainFrame = VRender.PageView.extend(module, {
-	pageTitle: "秘密",
+	pageTitle: "不能说",
 	pageLogo: "/images/logo.png",
 
 	renderBody: function (body) {
@@ -16,4 +16,4 @@ var MainFrame = VRender.PageView.extend(module, {
 	}
 });
 
-MainFrame.use(VRender.plugins.SinglePage);
+// MainFrame.use(VRender.plugins.SinglePage);

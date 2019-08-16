@@ -3,6 +3,8 @@
 var VRender = require(__vrender);
 var Routers = require("./routers");
 
+VRender.use(require("v-render-ui"));
+
 var Application = exports;
 
 var configs = {
@@ -19,5 +21,5 @@ Application.run = function (port) {
 	if (port) {
 		configs.server.port = port;
 	}
-	VRender.create().initialize(configs).run();
+	new VRender(configs);
 };
